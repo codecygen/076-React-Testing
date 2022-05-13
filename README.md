@@ -12,3 +12,10 @@ Automated tests consists of 3 categories:
 There are 2 tools for testing. which are already installed when you install the React app;
 - **Jest:** This is a tool for running the tests and asserting results.
 - **React Testing Library:** Tool for simulating (rendering) the React app and components.
+
+There are 2 files for testing:
+- **/src/components/setupTests.js**, as the name suggests, it setups the test file and we don't need to do anything with it. This is the actual section where we will write the test code.
+- **/src/components/App.js**
+
+Running test:
+- **npm test**, this command will fire up an options screen. From there, if you hit **button a**, it will run all the test files that has the extension of ***.test.js**.
