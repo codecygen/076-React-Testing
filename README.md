@@ -26,4 +26,5 @@ When writing a test, you have to do 3 A's.
 - **Assert**, compare execution results with expected results.
 
 Keywords For Code Tests:
-- **React-Test-Greeting-Component**, setup the **Greeting.test.js** file. Then run the test with **npm tes**t.
+- **React-Test-Greeting-Component**, **Greeting.test.js** file is prepared for it. Run the test with **npm test**.
+- **React-Test-Async-Component-Code**, **React-Test-Async-Component-Replacing-Real-Fetch-Request-With-Mock**, **Async.test.js** file is prepared for it. Run the test with **npm test**.
