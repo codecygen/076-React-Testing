@@ -13,9 +13,17 @@ There are 2 tools for testing. which are already installed when you install the 
 - **Jest:** This is a tool for running the tests and asserting results.
 - **React Testing Library:** Tool for simulating (rendering) the React app and components.
 
-There are 2 files for testing:
+Initially, there are 2 files for testing:
 - **/src/components/setupTests.js**, as the name suggests, it setups the test file and we don't need to do anything with it. This is the actual section where we will write the test code.
-- **/src/components/App.js**
+- **/src/components/App.test.js**, this file is to test the **App.js**.
 
 Running test:
-- **npm test**, this command will fire up an options screen. From there, if you hit **button a**, it will run all the test files that has the extension of ***.test.js**.
+- **npm test**, this command will fire up an options screen. From there, if you hit **button a**, it will run all the test files that has the extension of ***.test.js**. If you want to quit the test press **button q** or **CTRL C**.
+
+When writing a test, you have to do 3 A's.
+- **Arrange**, set up the test data, test conditions and test environment.
+- **Act**, run logic that should be tested (e.g. execute function).
+- **Assert**, compare execution results with expected results.
+
+Keywords For Code Tests:
+- React-Test-Greeting-Component
