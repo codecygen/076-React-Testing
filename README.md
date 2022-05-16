@@ -25,6 +25,8 @@ When writing a test, you have to do 3 A's.
 - **Act**, run logic that should be tested (e.g. execute function).
 - **Assert**, compare execution results with expected results.
 
-Keywords For Code Tests:
-- **React-Test-Greeting-Component**, **Greeting.test.js** file is prepared for it. Run the test with **npm test**.
-- **React-Test-Async-Component-Code**, **React-Test-Async-Component-Replacing-Real-Fetch-Request-With-Mock**, **Async.test.js** file is prepared for it. Run the test with **npm test**.
+# Keywords For Code Tests:
+Run **npm test** to start testing the project.
+- **React-Test-Greeting-Component**, **Greeting.test.js** file is prepared for it.
+- **React-Test-Async-Component-Code**. **Async.test.js** file is prepared for it.
+- **React-Test-Async-Component-Replacing-Real-Fetch-Request-With-Mock**, this test is used to eliminate the real fetch request and instead, introducing the mock function could be necessary as we don't really want our system to test the correctness of the fetch function but instead, we would like to test the behavior of the component. Thats why working with mocks is necessary. **Async.js** and **Async.test.js** file is prepared for it.

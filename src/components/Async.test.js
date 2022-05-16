@@ -9,6 +9,20 @@ describe('Async component', () => {
     // Because "Async" component has an async fetch request,
     // we have to make the test function an async function.
     test('renders posts if request succeeds', async () => {
+
+        // React-Test-Async-Component-Replacing-Real-Fetch-Request-With-Mock
+        // Overriding the built in fetch function here in this section.
+        // fn creates a dummy function.
+        window.fetch = jest.fn();
+        window.fetch.mockResolvedValueOnce({
+            // Here because fetch function in "Async.js" returns
+            // json data response we call it this way.
+            // Additionally, our async function here returns an array
+            // Because in the actual fetch function in "Async.js", resolved
+            // data will be an array.
+            json: async () => [{ id: 'p1',  title: 'First Post'}],
+        });
+
         render(<Async />);
 
         // Assert
